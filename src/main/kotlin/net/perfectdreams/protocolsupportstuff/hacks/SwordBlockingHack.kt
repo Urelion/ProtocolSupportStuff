@@ -45,7 +45,7 @@ class SwordBlockingHack(val m: ProtocolSupportStuff, val connection: Connection)
 		event.addPacketAfter(offHandCopy.handle)
 
 		// When holding a sword for shield blocking, the client sends the main hand packet twice
-		event.addPacketAfter(packet.deepClone())
+                event.addPacketAfter(packet.deepClone().handle)
 	}
 
 	override fun onPacketSending(event: PacketEvent) {
