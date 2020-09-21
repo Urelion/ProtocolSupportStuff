@@ -28,4 +28,4 @@ jobs:
         if: success()
         with:
           name: ProtocolSupportStuff
-          path: target/ProtocolSupportStuff-2.1.1 .jar
+          path: target/ProtocolSupportStuff-2.1.1.jar
