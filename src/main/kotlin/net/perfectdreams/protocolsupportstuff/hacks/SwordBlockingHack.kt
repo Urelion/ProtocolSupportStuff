@@ -34,7 +34,8 @@ class SwordBlockingHack(val m: ProtocolSupportStuff, val connection: Connection)
 				itemInMainHandType == Material.STONE_SWORD ||
 				itemInMainHandType == Material.GOLDEN_SWORD ||
 				itemInMainHandType == Material.IRON_SWORD ||
-				itemInMainHandType == Material.DIAMOND_SWORD
+				itemInMainHandType == Material.DIAMOND_SWORD ||
+				itemInMainHandType == Material.NETHERITE_SWORD
 
 		if (!holdingSword)
 			return
