@@ -16,6 +16,10 @@
     </properties>
 
     <repositories>
+     <repository>
+      <id>papermc</id>
+      <url>https://papermc.io/repo/repository/maven-public/</url>
+     </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
@@ -52,7 +56,7 @@
     <dependencies>
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>paper</artifactId>
+            <artifactId>paper-api</artifactId>
             <version>1.13-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
@@ -63,8 +67,8 @@
         </dependency>
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
-            <artifactId>ProtocolLib-API</artifactId>
-            <version>4.3.0</version>
+            <artifactId>ProtocolLib</artifactId>
+            <version>4.6.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

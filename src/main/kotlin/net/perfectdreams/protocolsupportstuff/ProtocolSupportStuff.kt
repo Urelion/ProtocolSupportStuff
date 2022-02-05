@@ -1,7 +1,7 @@
 package net.perfectdreams.protocolsupportstuff
 
 import co.aikar.commands.PaperCommandManager
-import com.destroystokyo.paper.PaperConfig
+//import com.destroystokyo.paper.PaperConfig
 import net.perfectdreams.protocolsupportstuff.commands.ProtocolSupportStuffCommand
 import net.perfectdreams.protocolsupportstuff.hacks.StripSignColorCodesHack
 import net.perfectdreams.protocolsupportstuff.hacks.SwordBlockingHack
@@ -38,7 +38,7 @@ class ProtocolSupportStuff : JavaPlugin() {
 	var paper = false
 
 	override fun onEnable() {
-		paper = try { PaperConfig::class.java.declaredFields; true } catch (e: NoClassDefFoundError) { false }
+		//paper = try { PaperConfig::class.java.declaredFields; true } catch (e: NoClassDefFoundError) { false }
 
 		val manager = PaperCommandManager(this)
 		manager.registerCommand(ProtocolSupportStuffCommand(this))
